@@ -20,4 +20,14 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Common.Infrastructure\Common.Infrastructure.csproj" />
+    <ProjectReference Include="..\Profile.Domain\Profile.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DataPersistance\Configurations\" />
+    <Folder Include="DataPersistance\Migrations\" />
+  </ItemGroup>
+
 </Project>

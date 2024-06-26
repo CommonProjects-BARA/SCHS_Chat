@@ -6,6 +6,7 @@ namespace Chat.Domain.Entities
     {
         public TimeSpan? CleaningInterval { get; set; }
         public DateTime? CleaningTime { get; set; }
+        public int NumberOfPinned { get; set; }
         public ICollection<int> BlockedUser { get; set; } = new List<int>();
     }
 }

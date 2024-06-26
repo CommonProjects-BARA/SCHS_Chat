@@ -1,6 +1,0 @@
-@SCHS.Messenger.ApiHost_HostAddress = http://localhost:5063
-
-GET {{SCHS.Messenger.ApiHost_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

@@ -1,10 +1,12 @@
-﻿using System.IdentityModel.Tokens.Jwt;
+﻿
+using System.IdentityModel.Tokens.Jwt;
 
 namespace Common.ApplicarionDto
 {
     internal class JWTDeserialize
     {
-        public static string GetIdFromClaims(string jwt) {
+        public static string GetIdFromClaims(string jwt)
+        {
 
             var tokenHandler = new JwtSecurityTokenHandler();
 

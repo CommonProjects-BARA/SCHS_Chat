@@ -1,8 +1,9 @@
-﻿using Common.Infrastructure.DataPersistance;
+﻿
+using Authentication.Domain.Entities;
+using Common.Infrastructure.DataPersistance;
 using Microsoft.EntityFrameworkCore;
-using SCHS.User.Domain.Entities;
 
-namespace AuthenticationService.Infrastructure.DbContext
+namespace Authentication.infrastructure.DbContext
 {
     public class AuthDbContext : BaseDbContext
     {

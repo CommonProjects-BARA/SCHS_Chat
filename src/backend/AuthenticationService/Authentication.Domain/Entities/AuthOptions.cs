@@ -2,7 +2,7 @@
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
-namespace AuthenticationService.Domain.Entities
+namespace Authentication.Domain.Entities
 {
     public class AuthOptions : Entity<Guid>
     {

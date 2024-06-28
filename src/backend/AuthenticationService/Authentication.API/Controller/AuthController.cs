@@ -1,10 +1,6 @@
-﻿using AuthenticationService.Application;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using SCHS.User.Domain.Entities;
-using System;
+﻿using Microsoft.AspNetCore.Mvc;
 
-namespace AuthenticationService.Api.Controllers
+namespace Authentication.API.Controller
 {
     [ApiController]
     [Route("[controller]")]

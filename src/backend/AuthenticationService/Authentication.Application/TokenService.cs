@@ -1,7 +1,6 @@
-﻿using AuthenticationService.Domain.Entities;
-using System.IdentityModel.Tokens.Jwt;
+﻿using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
-using SCHS.User.Domain.Entities;
+using Authentication.Domain.Entities;
 using Microsoft.IdentityModel.Tokens;
 
 

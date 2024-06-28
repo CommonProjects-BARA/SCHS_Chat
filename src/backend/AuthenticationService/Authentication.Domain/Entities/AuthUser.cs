@@ -1,6 +1,6 @@
 ﻿using Common.Entities.Common;
 
-namespace SCHS.User.Domain.Entities
+namespace Authentication.Domain.Entities
 {
     public class AuthUser : Entity<Guid>
     {

@@ -1,11 +1,10 @@
-﻿
-using AuthenticationService.Infrastructure.DbContext;
+﻿using Authentication.Domain.Entities;
+using Authentication.infrastructure.DbContext;
+
 using Microsoft.EntityFrameworkCore;
-using SCHS.User.Domain.Entities;
 
 namespace AuthenticationService.Application
 {
-
     public class AuthService
     {
         private readonly AuthDbContext _context;

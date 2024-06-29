@@ -1,10 +1,7 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.Logging;
-using System.ComponentModel.DataAnnotations;
+﻿using Common.Domain.Exceptions;
 using System.Net;
-using System.Net.Http;
-using System.Text;
 using System.Text.Json;
+using ApplicationException = Common.Domain.Exceptions.ApplicationException;
 
 namespace Common.API.Handlers
 {
@@ -21,7 +18,7 @@ namespace Common.API.Handlers
             {
                 await next(context);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 _logger.LogError(ex.Message);
                 await Handle(context, ex);
@@ -36,8 +33,8 @@ namespace Common.API.Handlers
 
             response.StatusCode = exception switch
             {
-                ApplicationException e => (int) HttpStatusCode.InternalServerError,
-                ValidationException e => (int) HttpStatusCode.BadRequest,
+                ApplicationException e => (int)HttpStatusCode.InternalServerError,
+                ValidationException e => (int)HttpStatusCode.BadRequest,
                 _ => (int)HttpStatusCode.InternalServerError
             };
 

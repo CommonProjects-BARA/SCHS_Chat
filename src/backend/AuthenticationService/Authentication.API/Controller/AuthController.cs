@@ -19,7 +19,6 @@ namespace Authentication.API.Controller
         public async Task<IActionResult> Login([FromBody] LoginRequestDTO loginRequestDTO)
         {
             var response = await _mediator.Send(loginRequestDTO);
-            if (response.User == null) return BadRequest("что-то не так");
             return Ok(response);
         }
 

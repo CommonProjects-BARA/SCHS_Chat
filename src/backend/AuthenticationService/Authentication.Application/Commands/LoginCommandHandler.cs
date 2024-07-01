@@ -22,12 +22,9 @@ namespace Authentication.Application.Commands
             var user = _context.AuthUsers.FirstOrDefault(x => x.UserName == loginRequestDTO.UserName
             && x.Password == loginRequestDTO.Password);
 
-            if (user == null)
-                return new()
-                {
-                    Token = "",
-                    User = null,
-                };
+            //if (user == null)
+                // throw AppException
+
             var tokenrequest = new TokenRequest();
 
             string jwt = await _mediator.Send(tokenrequest);

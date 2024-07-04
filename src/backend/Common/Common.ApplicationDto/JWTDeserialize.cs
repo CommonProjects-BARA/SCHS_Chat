@@ -1,5 +1,6 @@
 ﻿
 using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 
 namespace Common.ApplicarionDto
 {
@@ -14,7 +15,7 @@ namespace Common.ApplicarionDto
 
             string userId =
                 claims.FirstOrDefault
-                (claim => claim.Type == JwtRegisteredClaimNames.Jti).Value;
+                (claim => claim.Type == ClaimTypes.Name).Value;
 
             if (userId == string.Empty) return "ух щипиит";
 

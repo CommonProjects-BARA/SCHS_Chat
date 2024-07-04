@@ -10,4 +10,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Common.API\Common.API.csproj" />
+    <ProjectReference Include="..\Authentication.ApplicationDto\Authentication.ApplicationDto.csproj" />
+  </ItemGroup>
+
 </Project>
